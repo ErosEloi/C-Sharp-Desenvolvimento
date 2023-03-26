@@ -18,14 +18,16 @@ namespace ContaBancaria
             senha = int.Parse(Console.ReadLine());
 
             //Validação da senha
-            do
+           if (senha != 2022)
             {
-                Console.WriteLine("Senha Incorreta!");
-                Console.Write("Digite a senha novamente: ");
-                senha = int.Parse(Console.ReadLine());
-                Console.WriteLine("=======================================================");
-            } while (senha != 2022);
-
+                do
+                {
+                    Console.WriteLine("Senha Incorreta!");
+                    Console.Write("Digite a senha novamente: ");
+                    senha = int.Parse(Console.ReadLine());
+                    Console.WriteLine("=======================================================");
+                } while (senha != 2022);
+            }
             //Operações na conta
             Console.WriteLine("Numero da conta: " + var.NumeroConta);
             Console.WriteLine("Saldo: " + var.Saldo);
