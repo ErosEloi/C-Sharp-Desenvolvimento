@@ -9,8 +9,8 @@ namespace ContaBancaria
     internal class Cliente
     {
 
-        public int NumeroConta;
-        public double Saldo;
+        public int NumeroConta{ get;  private set;  }
+        public double Saldo { get; private set; }
 
         public Cliente(int numeroConta)
         {
